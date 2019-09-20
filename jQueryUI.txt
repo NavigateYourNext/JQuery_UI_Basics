@@ -1,0 +1,16 @@
+jQuery UI is a powerful javascript library built on top of jQuery Javascript Library. It is a set of plugins
+for jQuery that adds new functionalities to the jQuery core library.
+
+jQUery is core library and jQUery UI built on top of it.
+It is an open source software
+
+
+Advantages: -
+
+1) Interactions - Draggable, Droppable, Resizable, Selectable, Sortable
+2) Widgets - Accordion, Autocomplete, Button, Checkboxradio, Datepicker etc
+3) More Effects - Add class, Color Animation, Easing etc.
+4) Utilitites
+5) Menu and Naviagation bar
+
+https://jqueryui.com/

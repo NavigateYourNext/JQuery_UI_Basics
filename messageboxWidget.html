@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Message Box</title>
+    <link rel = "stylesheet" href="jquery-ui.css">
+    <link rel = "stylesheet" href="jquery-ui.structure.css">
+    <link rel = "stylesheet" href="jquery-ui.theme.css"> <!-- in production use min version of each css file as it is lighter -->
+
+   <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> --> <!-- CDN Content Delivery Network where jquery is defined on server's-->
+
+    <script src = "jquery-3.4.1.js"></script>
+    <script src = "jquery-ui.js"></script> <!-- This file must be present after core jquery source-->
+</head>
+<body>
+
+    <div id="firstdiv">
+        <h3>Click Below</h3>
+        <br>
+        <br>
+        <button id="btn1">Click Here</button>
+    </div>
+
+    <div id="seconddiv">
+        <h3>This is dummy button</h3>
+        <br>
+        <br>
+        <img src="google1.png" width="200px">
+        <br>
+        <br>
+        <button id="btn2">Click Me</button>
+    </div>
+</body>
+
+<script>
+$("#btn1").click(function(){
+
+    $("#firstdiv").dialog({
+        title:"This is a dialog box",
+        draggable:false,
+        resizable:false,
+        height:200,
+        width:200,
+        modal:true,
+
+
+        buttons:[
+        {
+            text:"OK",
+            icon:"ui-icon-heart",
+            click:function()
+            {
+                $(this).dialog("close");
+            }
+        }
+        ]
+
+    });
+
+
+});
+
+
+</script>
+
+
+</html>

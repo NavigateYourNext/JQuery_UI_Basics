@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Widget Modification</title>
+    <link rel = "stylesheet" href="jquery-ui.css">
+    <link rel = "stylesheet" href="jquery-ui.structure.css">
+    <link rel = "stylesheet" href="jquery-ui.theme.css"> <!-- in production use min version of each css file as it is lighter -->
+
+   <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> --> <!-- CDN Content Delivery Network where jquery is defined on server's-->
+
+    <script src = "jquery-3.4.1.js"></script>
+    <script src = "jquery-ui.js"></script> <!-- This file must be present after core jquery source-->
+</head>
+<body>
+
+    //First get value of an attribute
+    //var height = $("#id").dialog("option","height"); //id should be same as the element where height attribute is defined
+
+    //Set value of an attribute
+    $("#id").dialog("option","height",400); //it will set height value to the id or class of the element
+
+    
+
+
+</body>
+</html>

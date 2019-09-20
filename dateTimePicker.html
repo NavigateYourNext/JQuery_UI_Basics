@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Time Picker</title>
+    <link rel = "stylesheet" href="jquery-ui.css">
+    <link rel = "stylesheet" href="jquery-ui.structure.css">
+    <link rel = "stylesheet" href="jquery-ui.theme.css"> <!-- in production use min version of each css file as it is lighter -->
+
+   <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> --> <!-- CDN Content Delivery Network where jquery is defined on server's-->
+
+    <script src = "jquery-3.4.1.js"></script>
+    <script src = "jquery-ui.js"></script> <!-- This file must be present after core jquery source-->
+</head>
+<body>
+    <div id="date">
+    <h2>Date Picker</h2>
+    <input id= "dateinput" type="text" placeholder="click to select date"></input>
+    </div>
+</body>
+
+<script>
+    
+    //$("#dateinput").datepicker(); //it will show calender on screen format is MM/dd/yyyy
+    $("#dateinput").datepicker({
+        numberOfMonths:1,
+        changeYear:true,
+        changeMonth:true,
+        showWeek:true,
+        showOtherMonths:true,
+        minDate:new Date(2018,9,1), //To set date range min
+        maxDate:new Date(2019,9,31) ////To set date range max
+        });
+</script>
+
+
+
+</html>
